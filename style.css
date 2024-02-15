@@ -1,0 +1,142 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  border: 1px solid red;
+  background-color: darkgray;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  font-size: 40px;
+  justify-content: start;
+  width: 50%;
+  background-color: #fff;
+
+}
+
+#gsearch:focus, #gsearch:active {
+  outline: none;
+  border: none;
+}
+
+.underserchbox {
+  border: 1px solid black;
+  width: 50%;
+  background-color: #fff;
+}
+
+.underserchbox ul {
+  padding: 1rem;
+  margin: 0;
+}
+
+.underserchbox li {
+  list-style: none;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.underserchbox li .name {
+  flex-grow: 1;
+  padding: 0 2rem;
+}
+
+::placeholder {
+  font-size: 40px;
+  padding: 50px;
+}
+
+.leftboxsearch {
+  border: 1px solid green;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.icon-box {
+  display: flex;
+  border: 1px solid red;
+}
+
+input[type="button"][value=""] {
+  padding-left: 20px;
+  background: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css") no-repeat left center;
+}
+
+.checkbox-round {
+  width: 3.3em;
+  height: 3.3em;
+  background-color: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  appearance: none;
+  /* -webkit-appearance: none; */
+  /* outline: none;
+    cursor: pointer; */
+  border: 1px solid red;
+}
+
+.checkbox-round:checked {
+  accent-color: green;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%230f0" d="M6.5 11.5l-3-3 1.5-1.5 1.5 1.5 4.5-4.5 1.5 1.5z"/></svg>');
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 50%;
+  align-items: center;
+  border: 1px solid black;
+}
+footer div {
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  /* border: 1px solid black; */
+  margin-top: 11px;
+}
+
+.btn {
+  background-color: #fff;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.name {
+  float: left;
+  font-size: 24px;
+}
+
+.item-display button {
+  border: 1px solid black;
+}
+.item-display button.active {
+  background-color: green;
+}
